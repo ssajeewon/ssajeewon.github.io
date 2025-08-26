@@ -6,18 +6,18 @@
   <title>Siddharth Sajeewon – Portfolio</title>
   <meta name="description" content="Siddharth Sajeewon. IT Professional. Bilingual (English & French). Portfolio and résumé." />
   <link rel="icon" href="/favicon.ico" />
-  <!-- Google Fonts: Samsung-like -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Apple-like font -->
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#ffffff;
-      --panel:#f7f8fa;
-      --line:#e6e8ee;
-      --text:#0a0a0a;
-      --muted:#5f6673;
-      --brand:#1428A0;
+      --bg:#C3D7DB; /* New pale gray-blue background */
+      --panel:#e6eff0;
+      --line:#b5c6ca;
+      --text:#1d1d1f; /* Apple.com-like dark text */
+      --muted:#444;
+      --brand:#0071e3; /* Apple blue */
       --card:#ffffff;
-      --section-alt:#f9fafc;
+      --section-alt:#d5e4e7;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -25,7 +25,7 @@
       margin:0;
       background:var(--bg);
       color:var(--text);
-      font-family:'Noto Sans', Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif;
+      font-family:'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale
     }
@@ -33,33 +33,33 @@
     a:hover{text-decoration:underline}
 
     /* Top bar */
-    .topbar{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);z-index:10}
+    .topbar{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);z-index:10}
     .wrap{max-width:1100px;margin:0 auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between}
-    .brand{font-weight:700;font-size:22px;letter-spacing:-.2px}
+    .brand{font-weight:600;font-size:22px;letter-spacing:-.2px;color:var(--text)}
 
     /* Buttons */
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--text);padding:12px 22px;font-weight:600;transition:all .2s ease}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--text);padding:12px 22px;font-weight:500;transition:all .2s ease}
     .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
     .btn.primary:hover{filter:brightness(0.92)}
 
     /* Sections */
     .hero{padding:80px 24px;border-bottom:1px solid var(--line);max-width:1100px;margin:0 auto}
-    .hero .sub{color:var(--muted);line-height:1.75;font-size:18px;margin-bottom:20px;max-width:880px}
+    .hero .sub{color:var(--text);line-height:1.75;font-size:18px;margin-bottom:20px;max-width:880px}
 
     section{padding:80px 24px;border-bottom:1px solid var(--line);max-width:1100px;margin:0 auto}
     section.alt{background:var(--section-alt)}
 
-    h2{font-size:28px;margin:0 0 20px;font-weight:700;letter-spacing:-.2px}
-    h3{margin:0 0 8px;font-size:20px}
+    h2{font-size:28px;margin:0 0 20px;font-weight:600;letter-spacing:-.2px;color:var(--text)}
+    h3{margin:0 0 8px;font-size:20px;font-weight:500;color:var(--text)}
 
     .grid{display:grid;gap:22px}
     @media(min-width:900px){.grid.cols-2{grid-template-columns:1fr 1fr}}
 
     /* Cards */
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 2px 4px rgba(0,0,0,.04)}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
     .meta{color:var(--muted);font-size:15px}
 
-    footer{padding:40px 24px;color:#666;text-align:center;font-size:14px}
+    footer{padding:40px 24px;color:#666;text-align:center;font-size:14px;background:#b8cdd2}
 
     /* Responsive spacing */
     @media(max-width:600px){
@@ -72,23 +72,26 @@
   <header class="topbar">
     <div class="wrap">
       <div class="brand">Siddharth Sajeewon</div>
-      <!-- Force-download PDF résumé -->
-      <a class="btn primary" href="/Siddharth_Sajeewon_CV.pdf" download="Siddharth_Sajeewon_CV.pdf">Résumé (PDF)</a>
+      <a class="btn primary" href="/Siddharth_Sajeewon_CV.pdf">Résumé (PDF)</a>
     </div>
   </header>
 
   <div class="hero" id="about">
+    <!-- about updated v2 -->
     <p class="sub">
-      Hi, I’m Siddharth, a bilingual IT support professional who enjoys making technology feel simple, reliable and stress-free. Whether it’s a PC / Server issue, a VPN glitch or a user locked out five minutes before a big meeting, I’m the one who steps in, sorts it out and keeps everything running smoothly.
+      Hi, I’m Siddharth, a bilingual IT support specialist who thrives on making technology effortless and reliable for everyone. Whether it's troubleshooting a server outage, resolving network connectivity issues or deploying urgent system patches, I step in with a steady hand to keep operations running smoothly when it matters most.
     </p>
     <p class="sub">
-      I’ve built hands-on experience across a wide range of technologies including Active Directory, Microsoft Exchange, Windows Server and Microsoft 365. I also help secure environments using ManageEngine Endpoint Central, Panda Security and CrowdStrike. I work with Azure and Confluence to support cloud integration and maintain clear, accessible documentation.
+      I’ve built solid experience across systems like Active Directory, Microsoft Exchange, Windows Server and Microsoft 365. I also help secure environments using tools like ManageEngine Endpoint Central, Panda Security and CrowdStrike, while supporting cloud integration through Azure and maintaining clear documentation via Confluence.
     </p>
     <p class="sub">
-      In addition to core systems, I’ve worked with tools such as Cisco Meraki, VMware, Remote Desktop, Windows 10 and 11, Citrix Workspace, Forticlient VPN, GLPI and Yeastar VoIP PBX.
+      Beyond daily support, I’ve contributed to several major IT projects including testing and launching a new internal department and deploying Windows 11 across multiple systems. These experiences sharpened my skills in project execution, cross-functional collaboration and adapting quickly to evolving technical needs.
     </p>
     <p class="sub">
-      What motivates me is straightforward. I value professionalism, clear communication and a service-first mindset. I don’t just fix problems. I make sure people feel supported, confident and able to focus on what they do best.
+      On the tools side, I’m well-versed in Cisco Meraki, VMware, Remote Desktop, Citrix Workspace, Forticlient VPN, Windows 10 and 11, GLPI and Yeastar VoIP PBX.
+    </p>
+    <p class="sub">
+      What drives me is simple. I value professionalism, proactive support and clear communication. I don’t just resolve technical problems. I ensure users feel confident, supported and able to focus on what they do best.
     </p>
   </div>
 
@@ -109,7 +112,7 @@
       </div>
       <div class="card">
         <h3>IT Technician</h3>
-        <p class="meta">Holdem Group · Dec 2018 – Dec 2020 · Mauritius · On-site</p>
+        <p class="meta">Holdem Group · Dec 2018 – Dec 2020 · Mauritius · On‑site</p>
       </div>
     </div>
   </section>
@@ -152,7 +155,7 @@
       <p>Location: Montréal, QC</p>
       <div class="chips" style="margin-top:8px">
         <a class="btn primary" href="mailto:ssajeewon@gmail.com">Email me</a>
-        <a class="btn" href="/Siddharth_Sajeewon_CV.pdf" download="Siddharth_Sajeewon_CV.pdf">Résumé (PDF)</a>
+        <a class="btn" href="/Siddharth_Sajeewon_CV.pdf">Résumé (PDF)</a>
       </div>
     </div>
   </section>
